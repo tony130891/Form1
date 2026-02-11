@@ -1,0 +1,39 @@
+@font-face {
+    font-family: 'Norse-Bold';
+    src: url(font/Norse-Bold.otf);
+}
+
+body {
+    font: 1.2rem "Arial";
+    padding: 0.5em;
+    margin: 0;
+}
+
+form {
+  position: relative;
+  width: 740px;
+  height: 498px;
+  margin: 0 auto;
+  padding: 1em;
+  box-sizing: border-box;
+
+  display: grid;
+  grid-gap: 20px;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: 10em 1em 1em 1em 10em;
+}
+
+h1 {
+    grid-row: 1 / 5;
+    background-image: url(/halie-west-25xggax4bSA-unsplash.jpg);
+}
+
+.names,
+.nameInput,
+.contact,
+.contactInput,
+.passwords,
+.passwordInput,
+.submit {
+    display: flex;
+}
